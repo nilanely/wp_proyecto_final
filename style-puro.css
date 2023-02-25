@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+
+.titulo-carrusel {
+  text-align: center;
+}
+
+.titulo-carrusel__titulo {
+  font-family: "Monospace", sans-serif;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.titulo-carrusel__parrafo{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #6b7280;
+}
+
+.carrusel {
+  display: flex;
+  width: 75%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carrusel__contenedor {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carrusel__contenedor-list {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__item {
+  position: relative;
+}
+
+.slider__img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.slider__banner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.slider__banner-text {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 2.5rem;
+  background: #6b7280a1;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.slider__buttons-content {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: calc(100% - 3rem);
+  top: 0;
+  left: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.slider__buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-slider {
+  border-radius: 50%;
+  background: #facc15cc;
+  border: none;
+  padding: .75rem;
+  line-height: 0;
+}
+
+.btn-slider__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  stroke: #fff;
+}
+
+.btn-slider__icon:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.seccion-actividades {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2.5rem;
+}
+
+.seccion-actividades__titulo {
+  position: relative;
+  text-align: center;
+}
+
+.seccion-actividades__text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.galeria__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 991.98px) {
+  .galeria__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .galeria__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.galeria__card {
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.galeria__card-content {
+  height: 24rem;
+  width: 18rem;
+}
+
+.galeria__card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.galeria__card:hover .galeria__card-img {
+  transform: rotate(3deg) scale(1.25) skewY(0) skewX(0);
+}
+
+.galeria__card__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, #00000000, #00000000, #000000b3);
+}
+
+.galeria__card:hover .galeria__card__text-content {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+}
+
+.galeria__card__text-content {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  text-align: center;
+  transform: translateY(60%);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.galeria__card:hover .galeria__card__text-content {
+  transform: translateY(0);
+}
+
+.galeria__card__text-titulo {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.galeria__card__text-descripcion {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #fff;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.galeria__card:hover .galeria__card__text-descripcion {
+  opacity: 1;
+}
+
+.btn-card {
+  border-radius: 9999px;
+  background: #eab308;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: capitalize;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #000;
+  text-decoration: none;
+}
