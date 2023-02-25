@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puro Css</title>
+  <link rel="stylesheet" href="./style-puro.css">
+</head>
+<body>
+  <!-- Titulo carrusel-->
+  <div class="titulo-carrusel">
+    <h1 class="titulo-carrusel__titulo">
+      Bienvenidos a Weelness Zone
+    </h1>
+
+    <p class="titulo-carrusel__parrafo text-sm text-gray-500">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <!--carrusel-->
+  <section class="carrusel">
+    <div class="carrusel__contenedor">
+      <div class="carrusel__contenedor-list">
+        <ul class="slider" id="slider">
+          <li class="slider__item">
+            <img
+              class="slider__img"
+              src="https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+              alt="Actividades dirigidas"
+            />
+            <div class="slider__banner">
+              <h2 class="slider__banner-text">
+                Actividades dirigidas
+              </h2>
+            </div>
+          </li>
+          <li class="slider__item hidden">
+            <img
+              class="slider__img"
+              src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGFya2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
+              alt=""
+            />
+            <div class="slider__banner">
+              <h2 class="slider__banner-text">
+                Parking gratuito
+              </h2>
+            </div>
+          </li>
+          <li class="slider__item hidden">
+            <img
+              class="slider__img"
+              src="https://images.unsplash.com/photo-1561214078-f3247647fc5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+            />
+            <div class="slider__banner">
+              <h2 class="slider__banner-text">
+                Instalaciones Equipadas
+              </h2>
+            </div>
+          </li>
+        </ul>
+        <div class="slider__buttons-content">
+          <div class="slider__buttons">
+            <button onclick="prev()" class="btn-slider">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="btn-slider__icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
+                />
+              </svg>
+            </button>
+            <button onclick="next()" class="btn-slider">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="btn-slider__icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- actividades -->
+  <section class="seccion-actividades">
+    <div class="seccion-actividades__titulo">
+      <h1 class="seccion-actividades__titulo-text">
+        ACTIVIDADES DEPORTIVAS
+      </h1>
+    </div>
+    <!-- galeria imagenes-->
+    <div class="galeria">
+      <div class="galeria__grid">
+        <!--primera imagen-->
+        <div class="galeria__card group">
+          <div class="galeria__card-content">
+            <img
+              class="galeria__card-img"
+              src="https://images.pexels.com/photos/6456225/pexels-photo-6456225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </div>
+          <div class="galeria__card__backdrop"></div>
+          <div class="galeria__card__text-content">
+            <h1 class="galeria__card__text-titulo">Boxeo</h1>
+            <p class="galeria__card__text-descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              ad odio quibusdam.
+            </p>
+            <a href="monitores.html" class="btn-card">
+              Ver más
+            </a>
+          </div>
+        </div>
+        <!--segunda imagen-->
+        <div class="galeria__card group">
+          <div class="galeria__card-content">
+            <img
+              class="galeria__card-img"
+              src="https://images.pexels.com/photos/1552108/pexels-photo-1552108.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </div>
+          <div class="galeria__card__backdrop"></div>
+          <div class="galeria__card__text-content">
+            <h1 class="galeria__card__text-titulo">CrossFit</h1>
+            <p class="galeria__card__text-descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              ad odio quibusdam.
+            </p>
+            <a href="monitores.html" class="btn-card">
+              Ver más
+            </a>
+          </div>
+        </div>
+        <!--tercera imagen-->
+        <div class="galeria__card group">
+          <div class="galeria__card-content">
+            <img
+              class="galeria__card-img"
+              src="https://images.pexels.com/photos/6740056/pexels-photo-6740056.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt=""
+            />
+          </div>
+          <div class="galeria__card__backdrop"></div>
+          <div class="galeria__card__text-content">
+            <h1 class="galeria__card__text-titulo">Pilates</h1>
+            <p class="galeria__card__text-descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              ad odio quibusdam.
+            </p>
+            <a href="monitores.html" class="btn-card">
+              Ver más
+            </a>
+          </div>
+        </div>
+
+        <!--cuarta imagen-->
+        <div class="galeria__card group">
+          <div class="galeria__card-content">
+            <img
+              class="galeria__card-img"
+              src="https://images.pexels.com/photos/9617732/pexels-photo-9617732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </div>
+          <div class="galeria__card__backdrop"></div>
+          <div class="galeria__card__text-content">
+            <h1 class="galeria__card__text-titulo">Natación</h1>
+            <p class="galeria__card__text-descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              ad odio quibusdam.
+            </p>
+            <a href="monitores.html" class="btn-card">
+              Ver más
+            </a>
+          </div>
+        </div>
+        <!--quinta imagen-->
+        <div class="galeria__card group">
+          <div class="galeria__card-content">
+            <img
+              class="galeria__card-img"
+              src="https://images.pexels.com/photos/4662349/pexels-photo-4662349.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt=""
+            />
+          </div>
+          <div class="galeria__card__backdrop"></div>
+          <div class="galeria__card__text-content">
+            <h1 class="galeria__card__text-titulo">
+              Total Training
+            </h1>
+            <p class="galeria__card__text-descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              ad odio quibusdam.
+            </p>
+            <a href="monitores.html" class="btn-card">
+              Ver más
+            </a>
+          </div>
+        </div>
+        <!--sexta imagen-->
+        <div class="galeria__card group">
+          <div class="galeria__card-content">
+            <img
+              class="galeria__card-img"
+              src="https://images.pexels.com/photos/7900272/pexels-photo-7900272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </div>
+          <div class="galeria__card__backdrop"></div>
+          <div class="galeria__card__text-content">
+            <h1 class="galeria__card__text-titulo">Yoga</h1>
+            <p class="galeria__card__text-descripcion">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              ad odio quibusdam.
+            </p>
+            <a href="monitores.html" class="btn-card">
+              Ver más
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./index.js"></script>
+</body>
+</html>
